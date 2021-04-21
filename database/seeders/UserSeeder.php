@@ -22,6 +22,8 @@ class UserSeeder extends Seeder
             'email' => 'admin@admin.com',
             'password' => Hash::make('password'),
         ]);
+
+        // create just unverified users
         User::factory()->count(10)->unverified()->create();
     }
 }
