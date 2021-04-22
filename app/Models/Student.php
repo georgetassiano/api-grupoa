@@ -20,4 +20,6 @@ class Student extends Model
         'cpf',
         'ra'
     ];
+
+
 }

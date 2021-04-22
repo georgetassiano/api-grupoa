@@ -25,7 +25,8 @@ class LoginRequest extends FormRequest
     {
         return [
             'email' => 'required|email|exists:users,email',
-            'password' => 'required|password:api'
+            'password' => 'required',
+            'device_name' => 'required|string'
         ];
     }
 }
