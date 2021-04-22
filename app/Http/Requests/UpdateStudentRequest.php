@@ -25,7 +25,9 @@ class UpdateStudentRequest extends FormRequest
     {
         return [
             'email' => 'sometimes|email',
-            'name' => 'sometimes|string'
+            'name' => 'sometimes|string',
+            'cpf' => 'prohibited',
+            'ra' => 'prohibited'
         ];
     }
 }
